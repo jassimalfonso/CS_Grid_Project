@@ -40,6 +40,10 @@ height and width is set to 100%, then flexbox is used. */
 	cursor: pointer;
 }
 
+.overlay.white {
+	color: white;
+}
+
 .project-grid {
 	display: grid;
 	grid-template-areas: 
@@ -109,7 +113,7 @@ height and width is set to 100%, then flexbox is used. */
 			"dimensional dimensional";
 	}
 
-	/* .project .overlay {
-
-	} */
+	.project .overlay {
+		font-size: 24px;
+	}
 }
