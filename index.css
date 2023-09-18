@@ -2,46 +2,37 @@ body {
 	font-family: 'Poppins', sans-serif;
 	/* margin: 0; */
 }
-.project {
-	/* width: 600px; */
-	position: relative;
-}
 
-.project img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-/* In order to place something on top of another thing
-position is used. To center the text in the overlay,
-height and width is set to 100%, then flexbox is used. */
-.project .overlay {
-	margin: 0;
-	text-transform: uppercase;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0.3);
+.navbar {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	padding: 64px 0;
+}
+
+.navbar .left {
+	font-size: 32px;
 	font-weight: bold;
-	font-size: 36px;
-	letter-spacing: 2px;
-	opacity: 0;
-	transition: opacity 0.2s ease;
 }
 
-.project .overlay:hover {
-	opacity: 1;
-	cursor: pointer;
+.navbar .right {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.overlay.white {
-	color: white;
+.navbar .right a {
+	text-decoration: none;
+	color: black;
+}
+.navbar .right a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.navbar .right img {
+	width: 24px;
+	height: 24px;
 }
 
 .project-grid {
@@ -87,6 +78,48 @@ height and width is set to 100%, then flexbox is used. */
 #dimensional {
 	grid-area: dimensional;
 }
+.project {
+	/* width: 600px; */
+	position: relative;
+}
+
+.project img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* In order to place something on top of another thing
+position is used. To center the text in the overlay,
+height and width is set to 100%, then flexbox is used. */
+.project .overlay {
+	margin: 0;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 36px;
+	letter-spacing: 2px;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.project .overlay:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.overlay.white {
+	color: white;
+}
+
 
 @media only screen and (max-width: 1100px) {
 	.project-grid {
