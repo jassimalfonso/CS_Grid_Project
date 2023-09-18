@@ -3,6 +3,12 @@ body {
 	/* margin: 0; */
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 90%;
+	padding: 0 16px;
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -47,8 +53,8 @@ body {
 		"foam foam dimensional";
 	grid-gap: 16px;
 	width: 100%;
-	max-width: 90%;
-	margin: 0 auto;
+	/* max-width: 90%; */
+	/* margin: 0 auto; */
 }
 
 #eth {
@@ -120,8 +126,18 @@ height and width is set to 100%, then flexbox is used. */
 	color: white;
 }
 
+.footer {
+	text-align: center;
+	padding: 64px;
+}
+
 
 @media only screen and (max-width: 1100px) {
+	
+	.container{
+		max-width: 100%;
+	}
+
 	.project-grid {
 		grid-template-areas: 
 			"eth eth"
@@ -148,5 +164,10 @@ height and width is set to 100%, then flexbox is used. */
 
 	.project .overlay {
 		font-size: 24px;
+	}
+	
+	.footer {
+		font-size: 14px;
+		padding: 32px;
 	}
 }
