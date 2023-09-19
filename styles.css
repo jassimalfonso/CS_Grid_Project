@@ -207,14 +207,14 @@ height and width is set to 100%, then flexbox is used. */
 	}
 }
 
-.hamburger .bar1 {
-	animation: flipBar1 1s infinite;
+.animateBar1 {
+	animation: flipBar1 .25s forwards;
 }
-.hamburger .bar2 {
-	animation: fadeBar2 1s infinite;
+.animateBar2 {
+	animation: fadeBar2 .25s forwards;
 }
-.hamburger .bar3 {
-	animation: flipBar3 1s infinite;
+.animateBar3 {
+	animation: flipBar3 .25s forwards;
 }
 
 @keyframes flipBar1 {
@@ -244,3 +244,4 @@ height and width is set to 100%, then flexbox is used. */
 		transform: rotate(-45deg) translate(4px, -10px);
 	}
 }
+
