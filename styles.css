@@ -65,8 +65,9 @@ body {
 	position: fixed;
 	z-index: 2;
 	top: 0;
-	right: 0;
+	right: -160px;
 	padding: 16px;
+	transition: transform .5s ease-out;
 }
 
 .mobileNav img {
@@ -83,6 +84,9 @@ body {
 	text-decoration: underline;
 }
 
+.openMobileNav {
+	transform: translateX(-160px);
+}
 
 
 .project-grid {
@@ -210,6 +214,10 @@ height and width is set to 100%, then flexbox is used. */
 		align-items: center;
 		justify-content: center;
 	}
+	
+	.navbar .hamburger:hover {
+		cursor: pointer;
+	}
 
 	.navbar .right {
 		display: none;
@@ -238,13 +246,13 @@ height and width is set to 100%, then flexbox is used. */
 }
 
 .animateBar1 {
-	animation: flipBar1 .25s forwards;
+	animation: flipBar1 .5s forwards;
 }
 .animateBar2 {
-	animation: fadeBar2 .25s forwards;
+	animation: fadeBar2 .5s forwards;
 }
 .animateBar3 {
-	animation: flipBar3 .25s forwards;
+	animation: flipBar3 .5s forwards;
 }
 
 @keyframes flipBar1 {
